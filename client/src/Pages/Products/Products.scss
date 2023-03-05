@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway&family=Roboto&display=swap');
+
+.products{
+    padding:30px 50px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    .left{
+        flex: 1;
+        position: sticky;
+        height: 100%;
+        top: 50px;
+        font-family: 'Roboto', sans-serif !important;
+        .filterItem{
+            margin-bottom: 30px;
+
+            h2{
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+
+            .inputItem{
+                margin-bottom: 10px;
+                label{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .right{
+        flex: 3;
+        
+        .catImg{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 50px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .products {
+        padding: 25px 25px;
+        font-size: 12px;
+    }
+    .products .left .filterItem h2 {
+        margin-bottom: 14px;
+        font-size: 15px;
+    }
+    .range{
+        width: 50%;
+    }
+    .list {
+        justify-content: center;
+    }
+    .card .image img {
+        width: 80%;
+    }
+}

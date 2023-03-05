@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather+Sans&family=Montserrat+Alternates&family=Raleway&family=Ubuntu&display=swap');
+
+.navbar{
+    height:70px;
+    font-family: 'Lato', sans-serif;
+    .wrapper{
+        padding:10px 30px;
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .item{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .left{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+    .center{
+        font-size: 28px;
+        letter-spacing: 2px;
+        font-family: 'Raleway', sans-serif !important;
+    }
+
+    .right{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .icons{
+        display: flex;
+        color: #777;
+        gap: 13px;
+        cursor: pointer;
+
+        .cartIcon{
+            position: relative;
+            span{
+                font-size: 10px;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                background-color: #2879fe;
+                color: white;
+                position: absolute;
+                right: -10px;
+                top: -10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+/* Style for devices with a screen width of 768px or less */
+@media screen and (max-width: 850px) {
+    .navbar{
+        .left{
+            .item{
+                display: none;
+            }
+        }
+    }
+    
+    .navbar .right{
+        gap:0px;
+    }
+    .center{
+        a{
+            font-size: 17px;
+        }
+    }
+    .navbar{
+        .item{
+            a{
+             display:none;
+            }
+         }
+    }
+    
+    
+  }
+  
+  /* Style for devices with a screen width of 992px or less */
+  @media screen and (max-width: 1240px) {
+    .navbar{
+        .left{
+            gap: 12px;
+            a{
+                font-size: 12px;
+                display: none;
+            }
+        }
+        .right{
+            gap: 12px;
+            a{
+                font-size: 12px;
+            }
+        }
+        .center{
+            font-size: 20px;
+        }
+        .wrapper{
+            padding: 10px 15px;
+        }
+    }
+  }

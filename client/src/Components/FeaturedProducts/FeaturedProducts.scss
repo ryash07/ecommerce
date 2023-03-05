@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+
+.featuredProducts{
+    font-family: 'Lato', sans-serif;
+    margin: 100px 200px;
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        h1{
+            flex: 2;
+            text-transform: uppercase;
+        }
+        p{
+            flex: 3;
+            color: grey;
+        }
+    }
+
+    .bottom{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .featuredProducts{
+        margin: 75px 25px;
+        font-size: 13px;
+
+        .bottom{
+            max-width: 100%;
+            gap: 35px;
+            flex-wrap: wrap;
+        }
+    }
+
+    .card {
+        width: 230px;
+        gap: 7px;
+        margin-bottom: 30px;
+    }
+    .card .image {
+        width: 84%;
+        height: 330px;
+    }
+    .featuredProducts .top{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 1250px) {
+
+    .featuredProducts{
+        margin: 100px 50px;
+        font-size: 16px;
+
+        .bottom{
+            max-width: 125%;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+    }
+
+    .card {
+        width: 260px;
+        gap: 9px;
+        margin-bottom: 37px;
+    }
+    .card .image {
+        width: 90%;
+        height: 360px;
+    }
+    .featuredProducts .top{
+        font-size: 11px;
+    }
+}

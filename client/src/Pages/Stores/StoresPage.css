@@ -1,0 +1,29 @@
+  
+  #stores {
+    background-color: #fff;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .store {
+    text-align: center;
+  }
+  
+  .store img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .store h3 {
+    margin-top: 0;
+  }
+  
+  .store p {
+    margin-bottom: 0;
+  }
+  
