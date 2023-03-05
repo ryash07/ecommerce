@@ -1,7 +1,14 @@
 module.exports = [
   'strapi::errors',
   'strapi::security',
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      enabled: true,
+      headers: '*',
+      origin: ['https://urbanessentialsco.netlify.app/', 'http://example2']
+    }
+  },
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
